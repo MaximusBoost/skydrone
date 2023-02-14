@@ -1,0 +1,67 @@
+* {
+    font-family: 'Raleway', sans-serif;
+    font-size: 10px;
+}
+
+$color-white: #fff;
+$color-orange: #C4730A;
+$color-dark-grey: #4B4B4B;
+$color-brown: #612B00;
+
+
+
+$fw-bold: 700;
+$fw-norm: 400;
+
+$fstyle: normal;
+
+$fsz-h1: 4.8em;
+$fsz-label-2: 4.16em;
+$fsz-download-text: 3.2em;
+$fsz-label-1: 3em;
+$fsx-logo-text: 2.4em;
+$fsz-sub-text-h1: 2em;
+$fsz-small-text: 1.6em;
+$fsz-footer-down-text: 1.4em;
+
+$f-letter-spacing: -0.01em;
+
+$f-line-height-big: 150%;
+$f-line-height-medium: 120%;
+
+
+@text-style-h1 {
+    font-style: $fstyle;
+    font-weight: $fw-bold;
+    font-size: $fsz-h1;
+    line-height: $f-line-height-medium;
+    letter-spacing: $f-letter-spacing;
+    color: $color-dark-grey;
+}
+
+@text-sub-h1 {
+    font-style: $fstyle;
+    font-weight: $fw-bold;
+    font-size: $fsz-sub-text-h1;
+    line-height: $f-line-height-big;
+    letter-spacing: $f-letter-spacing;
+    color: $color-brown;
+}
+
+@text-btn {
+    font-style: $fstyle;
+    font-weight: $fw-bold;
+    font-size: $fsz-small-text;
+    line-height: $f-line-height-big;
+    color: $color-white;
+
+}
+
+@main-text {
+    font-style: $fstyle;
+    font-weight: $fw-norm;
+    font-size: $fsz-small-text;
+    line-height: $f-line-height-big;
+    color: $color-dark-grey;
+}
+
