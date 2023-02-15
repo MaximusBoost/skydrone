@@ -20,5 +20,8 @@
     "url": "https://github.com/MaximusBoost/skydrone/issues"
   },
   "homepage": "https://github.com/MaximusBoost/skydrone#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "swiper": "^9.0.5"
+  }
 }

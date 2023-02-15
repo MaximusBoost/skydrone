@@ -1,0 +1,76 @@
+
+.image-slider {
+    &__wrapper {
+        min-width: 0;
+    }
+
+    &__slide {
+        display: flex;
+    }
+
+    &__image {
+        margin-top: 16rem;
+        max-width: 640px;
+    }
+
+    &__text-part {
+        padding-top: 21.5rem;
+        max-width: 62rem;
+    }
+
+    &__above-title {
+        font-weight: $fw-bold;
+        font-size: $fsx-logo-text;
+        line-height: $f-line-height-big;
+        letter-spacing: .2em;
+        text-transform: uppercase;
+        color: #DF8928;
+        padding-bottom: 2.4rem;
+    }
+
+    &__title {
+        @extend %text-style-h1;
+        padding-bottom: 5.6rem;
+    }
+
+    &__card-comtainer{
+        display: flex;
+    }
+
+    &__card {
+        padding: 0 12px;
+    }
+}
+
+
+ 
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    &__circle {
+        width: 15px;
+        height: 15px;
+        margin-bottom: 3.2rem;
+        &_group{
+            width: 30px;
+        }
+    }
+
+    &__title {
+        padding-bottom: 1.6rem;
+        font-weight: $fw-bold;
+        font-size: 2.4rem;
+        line-height: 140%;
+        color: $color-dark-grey;
+    }
+
+    &__subtitle {
+        @extend %main-text;
+    }
+}
+
+.swiper-slide{
+    display: flex;
+}
