@@ -1,11 +1,20 @@
+
+html{
+    font-size: 10px;
+}
+
 * {
     font-family: 'Raleway', sans-serif;
-    font-size: 10px;
+}
+
+a{
+    cursor: pointer;
 }
 
 
 $color-white: #fff;
 $color-orange: #C4730A;
+$color-orange-hover: #975806;
 $color-dark-grey: #4B4B4B;
 $color-brown: #612B00;
 
@@ -42,7 +51,6 @@ $f-line-height-medium: 120%;
 
 %text-sub-h1 {
     font-style: $fstyle;
-    font-weight: $fw-bold;
     font-size: $fsz-sub-text-h1;
     line-height: $f-line-height-big;
     letter-spacing: $f-letter-spacing;
@@ -75,7 +83,7 @@ $f-line-height-medium: 120%;
 }
 
 .wrapper{
-    background-color: #4B4B4B;
+    background-color: #a9b4ef;
     width: 100%;
     height: 100%;
 }
@@ -84,4 +92,21 @@ $f-line-height-medium: 120%;
     max-width: 116rem;
     margin: 0 auto;
     padding: 0 10px;
+}
+
+._contact-button{
+    @extend %text-btn;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 13.3rem;
+    height: 4.8rem;
+    padding: 1.2rem 2.4rem;
+    background-color: $color-orange;
+    border-radius: 4px;
+    transition: background-color .5s ease 0s;
+    &:hover{
+        background-color: $color-orange-hover;
+        cursor: pointer;
+    }
 }

@@ -2,21 +2,33 @@
     display: flex;
     justify-content: space-between;
     padding: 0 10px;
-
+    width: 116rem;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0px);
+    z-index: 2;
     &__logo {
         padding-left: 4rem;
     }
 
     &__nav {
         display: flex;
+        align-items: center;
     }
 
     &__nav-item {
         font-size: 1.6rem;
         line-height: $f-line-height-big;
+        margin: 0 1.6rem;
+        cursor: pointer;
+        transition: color .5s ease 0s;
+        &:hover{
+            color: $color-orange-hover;
+        }
     }
 
     &__button {
+        margin: 0 1.6rem;
     }
 }
 .logo {
@@ -24,8 +36,8 @@
 
     &__img {
         position: absolute;
-        top: 30%;
-        left: 10%;
+        top: 23%;
+        left: 6%;
     }
 
     &__title {
