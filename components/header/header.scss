@@ -1,0 +1,34 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+
+    &__logo {
+        padding-left: 4rem;
+    }
+
+    &__nav {
+        display: flex;
+    }
+
+    &__nav-item {
+        font-size: 1.6rem;
+        line-height: $f-line-height-big;
+    }
+
+    &__button {
+    }
+}
+.logo {
+    position: relative;
+
+    &__img {
+        position: absolute;
+        top: 30%;
+        left: 10%;
+    }
+
+    &__title {
+        @extend %logo-text;
+    }
+}

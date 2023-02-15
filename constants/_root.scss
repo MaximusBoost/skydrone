@@ -3,6 +3,7 @@
     font-size: 10px;
 }
 
+
 $color-white: #fff;
 $color-orange: #C4730A;
 $color-dark-grey: #4B4B4B;
@@ -15,22 +16,22 @@ $fw-norm: 400;
 
 $fstyle: normal;
 
-$fsz-h1: 4.8em;
-$fsz-label-2: 4.16em;
-$fsz-download-text: 3.2em;
-$fsz-label-1: 3em;
-$fsx-logo-text: 2.4em;
-$fsz-sub-text-h1: 2em;
-$fsz-small-text: 1.6em;
-$fsz-footer-down-text: 1.4em;
+$fsz-h1: 4.8rem;
+$fsz-label-2: 4.16rem;
+$fsz-download-text: 3.2rem;
+$fsz-label-1: 3rem;
+$fsx-logo-text: 2.4rem;
+$fsz-sub-text-h1: 2rem;
+$fsz-small-text: 1.6rem;
+$fsz-footer-down-text: 1.4rem;
 
-$f-letter-spacing: -0.01em;
+$f-letter-spacing: -0.01rem;
 
 $f-line-height-big: 150%;
 $f-line-height-medium: 120%;
 
 
-@text-style-h1 {
+%text-style-h1 {
     font-style: $fstyle;
     font-weight: $fw-bold;
     font-size: $fsz-h1;
@@ -39,7 +40,7 @@ $f-line-height-medium: 120%;
     color: $color-dark-grey;
 }
 
-@text-sub-h1 {
+%text-sub-h1 {
     font-style: $fstyle;
     font-weight: $fw-bold;
     font-size: $fsz-sub-text-h1;
@@ -48,7 +49,7 @@ $f-line-height-medium: 120%;
     color: $color-brown;
 }
 
-@text-btn {
+%text-btn {
     font-style: $fstyle;
     font-weight: $fw-bold;
     font-size: $fsz-small-text;
@@ -57,7 +58,7 @@ $f-line-height-medium: 120%;
 
 }
 
-@main-text {
+%main-text {
     font-style: $fstyle;
     font-weight: $fw-norm;
     font-size: $fsz-small-text;
@@ -65,3 +66,22 @@ $f-line-height-medium: 120%;
     color: $color-dark-grey;
 }
 
+%logo-text{
+    width: 16.4rem;
+    height: 4.5rem;
+    font-weight: $fw-bold;
+    font-size: $fsz-label-1;
+    line-height: $f-line-height-big;
+}
+
+.wrapper{
+    background-color: #4B4B4B;
+    width: 100%;
+    height: 100%;
+}
+
+._container{
+    max-width: 116rem;
+    margin: 0 auto;
+    padding: 0 10px;
+}
