@@ -9,9 +9,9 @@ new Swiper('.image-slider', {
     },
     autoHeight: true,
     loop: true,
-    speed: 2500,
-    effect: 'fade',
-    fadeEffect: {
-        crossFade: true,
-    },
+    speed: 500,
+    // effect: 'fade',
+    // fadeEffect: {
+    //     crossFade: true,
+    // },
 })

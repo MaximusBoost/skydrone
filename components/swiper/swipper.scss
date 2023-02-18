@@ -2,6 +2,7 @@
 .image-slider {
     position: relative;
     overflow: hidden;
+    height: 100% !important;
     &__wrapper {
         // min-width: 0;
         
@@ -9,11 +10,12 @@
 
     &__slide {
         display: flex;
+        justify-content: space-between;
     }
 
     &__image {
         margin-top: 16rem;
-        max-width: 640px;
+        max-width: 64rem;
     }
 
     &__text-part {
@@ -47,6 +49,13 @@
     & .swiper-button-prev::after,
     & .swiper-button-next::after{
         color: $color-orange;
+    }
+
+    &__image_second{
+        border-radius: 0 0 100% 0;
+        max-width: 64rem;
+        margin-left: 5rem;
+        height: 54rem;
     }
 }
 
