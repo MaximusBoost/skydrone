@@ -2,7 +2,7 @@
     width: 100%;
     height: 100%;
     background: linear-gradient(0.12deg, #FFFFFF 0.1%, rgba(241, 252, 253, 0)
-     105.06%, rgba(255, 255, 255, 0) 105.06%), url(https://wallpapercrafter.com/sizes/3840x2160/245033-view-of-a-flying-drone-in-focus-with-a-sunrise-or-.jpg) no-repeat;
+     105.06%, rgba(255, 255, 255, 0) 105.06%), url(~/components/mainPage/img/fon_image.png) no-repeat;
      background-size: 100% 100%;
      background-blend-mode: color-burn, normal;
 
@@ -14,8 +14,8 @@
         background-color: #FFFFFF;
         width: 100rem;
         height: 100rem;
-        top: -15%;
-        left: -15%;
+        top: -12rem;
+        left: -25rem;
         border-radius: 100%;
         z-index: 1;
         box-shadow: 64.8409px 4.54508px 402px rgba(158, 158, 158, 0.16),

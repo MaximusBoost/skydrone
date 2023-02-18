@@ -1,0 +1,61 @@
+.features {
+
+    &__body {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    &__left-part {
+        max-width: 61.6rem;
+        padding: 20.8rem 8rem 0 0;
+    }
+
+    &__above-title {
+        font-weight: $fw-bold;
+        font-size: $fsx-logo-text;
+        line-height: $f-line-height-big;
+        letter-spacing: .2em;
+        text-transform: uppercase;
+        color: #DF8928;
+        padding-bottom: 2.4rem;
+    }
+
+    &__h1 {
+        @extend %text-style-h1;
+    }
+
+    &__content-container {
+        display: flex;
+        padding-top: 5.6rem;
+        gap: 2.4rem;
+    }
+
+    &__content-item {
+        padding-bottom: 1.6rem;
+    }
+
+    &__points {
+    }
+
+    &__item-header {
+        padding-top: 3.2rem;
+        font-weight: 700;
+        font-size: 2.4rem;
+        line-height: 140%;
+        color: #4B4B4B;
+    }
+
+    &__item-text {
+        padding-top: 1.6rem;
+        @extend %main-text;
+    }
+
+    &__right-part {
+    }
+
+    &__img {
+        padding: 6.4rem 0;
+    }
+}
+
