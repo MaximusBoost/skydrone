@@ -7,6 +7,10 @@ html{
     font-family: 'Raleway', sans-serif;
 }
 
+body{
+    overflow-x: hidden;
+}
+
 a{
     cursor: pointer;
 }
@@ -89,7 +93,7 @@ $f-line-height-medium: 120%;
 }
 
 ._container{
-    max-width: 116rem;
+    max-width: 130rem;
     margin: 0 auto;
     padding: 0 10px;
 }
