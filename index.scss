@@ -1,6 +1,13 @@
-@import './constants/_null.scss';
+@import './constants/_null.scss'; 
 @import './constants/_root.scss';
-@import './components/header/header';
-@import './components/mainPage/mainPage';
-@import './components/branding/branding';
-@import './components/swiper/swipper';
+@import './components/header/header.scss';
+@import './components/mainPage/mainPage.scss';
+@import './components/branding/branding.scss';
+@import './components/swiper/swipper.scss';
+@import './components/customer/customer.scss';
+@import './components/features/features.scss';
+@import './components/sunRise/sunRise.scss';
+@import './components/download/download.scss';
+@import './components/contactUs/contactUs.scss';
+@import './components/footer/footer.scss';
+// кто не напишет расширение файла, тот гомогейский гомогей

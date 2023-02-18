@@ -1,0 +1,60 @@
+.contactUs {
+
+    &__body {
+        display: flex;
+        flex-direction: row;
+    }
+
+    &__left-part {
+        width: 50%;
+    }
+
+    &__above-h1 {
+        font-weight: $fw-bold;
+        font-size: $fsx-logo-text;
+        line-height: $f-line-height-big;
+        letter-spacing: .2em;
+        text-transform: uppercase;
+        color: #DF8928;
+        padding-top: 12.8rem;
+    }
+
+    &__h1 {
+        @extend %text-style-h1;
+        padding-top: 1.6rem;
+    }
+
+    &__info {
+        padding-top: 8rem;
+    }
+
+    &__info-item {
+
+    }
+
+    &__img {
+    }
+
+    &__info-type {
+        font-size: $fsz-download-text;
+        font-weight: $fw-bold;
+        line-height: $f-line-height-medium;
+        letter-spacing: $f-letter-spacing;
+
+        padding-top: 2rem;
+    }
+
+    &__adress {
+        @extend %main-text;
+        padding: 0.8rem 0 4.3rem 0;
+    }
+
+    &__right-part {
+        width: 50%;
+
+        & img {
+            float: right;
+            padding: 28.6rem 0 16rem 0;
+        }
+    }
+}
