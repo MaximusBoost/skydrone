@@ -1,6 +1,7 @@
 import Swiper, {Navigation, Pagination, Autoplay, EffectFade} from 'swiper';
+import mySwiper from './components/swiper/swipper.js'
 Swiper.use([Navigation, Pagination, Autoplay, EffectFade]);
-new Swiper('.image-slider', {
+let swiper = new Swiper('.image-slider', {
     modules: [Navigation,Pagination],
     slidesPerView: 'auto',
     navigation: {
@@ -10,8 +11,18 @@ new Swiper('.image-slider', {
     autoHeight: true,
     loop: true,
     speed: 500,
-    // effect: 'fade',
-    // fadeEffect: {
-    //     crossFade: true,
-    // },
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true
+    }
 })
+
+// mySwiper.addPagination()
+let links = document.querySelectorAll('.navigation-menu__link')
+// let sliders = document.querySelectorAll('.swiper-slide')
+for(let i = 0; i < links.length; i++) {
+    links[i].addEventListener('click', function() {
+        swiper.slideTo(i,300,true);
+        return false;
+    })
+}
