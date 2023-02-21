@@ -16,19 +16,15 @@
         border-bottom: solid 1px #5E5E5E;
     }
 
-    &__label {
-        display: flex;
-        font-weight: 700;
-        font-size: 4.16rem;
-        line-height: 150%;
-        color: #F3F3F3;
-        gap: .5rem;
-    }
-
     &__socnet {
         display: flex;
         flex-direction: row;
         gap: 2.8rem;
+    }
+
+    &__link_last-element{
+        display: flex;
+        align-items: center;
     }
 
     &__navigation {
@@ -37,6 +33,16 @@
         font-size: $fsz-small-text;
         line-height: $f-line-height-big;
         color: #FFFFFF;
+
+        :nth-child(n){
+            transition: .5s ease 0s;
+            display: block;
+        }
+
+        :nth-child(n):hover{
+            color: $color-orange;
+            cursor: pointer;
+        }
     }
 
     &__addit-info {
@@ -52,11 +58,21 @@
         padding: 3.2rem 0 8rem 0;
 
         & p:nth-child(4) {
-            // display: block;
-            // color: brown;
-            // padding-left: 76.8rem;
             margin-left: auto;
-            
+        }
+
+        :not(:last-child){
+            transition: .5s ease 0s;
+        }
+
+        :not(:last-child):hover {
+            color: $color-orange;
+            cursor: pointer;
         }
     }
+}
+
+.logo__title_white{
+    color: #F3F3F3;
+    margin-left: 4rem;
 }
