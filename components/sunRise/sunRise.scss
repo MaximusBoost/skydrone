@@ -4,6 +4,10 @@
     height: 100%;
     background-size: 100% 100%;
 
+    @media (max-width: 767px) {
+        background: url(~/components/sunRise/img/fon_image.png) center no-repeat;
+    }
+
     &__body {
         display: flex;
         flex-direction: column;
@@ -13,6 +17,10 @@
     &__h1 {
         padding-top: 12.8rem;
         @extend %text-style-h1;
+
+        @media (max-width: 767px) {
+            font-size: 3.8rem;
+        }
     }
 
     &__sub-h1 {

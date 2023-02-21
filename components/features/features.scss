@@ -23,6 +23,10 @@
 
     &__h1 {
         @extend %text-style-h1;
+
+        @media (max-width: 767px) {
+            font-size: 4rem;
+        }
     }
 
     &__content-container {
@@ -52,10 +56,16 @@
     }
 
     &__right-part {
+        @media (max-width: 767px) {
+            position: absolute;
+            display: none;
+        }
+
     }
     
     &__img {
         padding: 6.4rem 0;
+       
     }
 }
 
