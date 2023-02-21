@@ -7,6 +7,9 @@
      background-blend-mode: color-burn, normal;
 
     &__body {
+        display: flex;
+        align-items: center;
+        height: 100%;
     }
 
     &__ellipse{
@@ -29,7 +32,7 @@
     &__text-part {
         display: flex;
         flex-direction: column;
-        padding-top: 21.6rem;
+        // margin-top: -7rem;
         max-width: 51rem;
         position: relative;
         z-index: 2;

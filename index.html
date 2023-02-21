@@ -13,21 +13,41 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <title>Template</title>
 </head>
-<header class="header _container">
-    <a href="#" class="header__logo logo">
-        <img src="./components/header/img/logo.svg" alt="logo" class="logo__img">
-        <span class="logo__title">SKYDRONE</span>
-    </a>
-    <nav class="header__nav">
-        <p class="header__nav-item">Clients</p>
-        <p class="header__nav-item">Features</p>
-        <p class="header__nav-item">Download App</p>
-        <button class="header__button _contact-button">Contact Us</button>
-    </nav>
-</header>
+
+
+
 <body>
+    
     <div class="wrapper">
         <div class="main-page">
+
+
+            <header class="header _container">
+                <a href="#" class="header__logo logo">
+                    <img src="./components/header/img/logo.svg" alt="logo" class="logo__img">
+                    <span class="logo__title">SKYDRONE</span>
+                </a>
+                <div class="header__icon">
+                    <span></span>
+                </div>
+                
+                <nav class="header__nav">
+                    <ul class="header__list">
+                        <li>
+                            <a href="#" class="header__nav-item _smooth-link" data-goto=".branding_anchor">Clients</a>
+                        </li>
+                        <li>
+                            <a href="#" class="header__nav-item _smooth-link" data-goto=".features_anchor">Features</a>
+                        </li>
+                        <li>
+                            <a href="#" class="header__nav-item _smooth-link" data-goto=".download_anchor">Download App</a>
+                        </li>
+                    </ul>
+                    <button class="header__button _contact-button">Contact Us</button>
+                </nav>
+            </header>
+
+            
             <div class="main-page__body _container">
                 <div class="main-page__ellipse"></div>
                 <div class="main-page__text-part">
@@ -40,7 +60,7 @@
         </div>
 
 
-        <div class="branding"> <a name="branding"></a>
+        <div class="branding branding_anchor">
             <div class="branding__body _container">
                 <h2 class="branding__title">Used by the world's most innovative companies</h2>
                 <div class="branding__container">
@@ -74,7 +94,7 @@
         </div>
 
         
-        <div class="image-slider swiper-container _container"> <a name="swiper"></a>
+        <div class="image-slider swiper-container _container">
             <div class="image-slider__wrapper swiper-wrapper">
                 <div class="image-slider__slide swiper-slide">
                     <img src="./components/swiper/img/field.jpg" alt="image" class="image-slider__image">
@@ -179,7 +199,7 @@
         </div>
 
 
-        <div class="customer"> <a name="customer"></a>
+        <div class="customer">
             <div class="customer__body _container">
                 <div class="customer__content">
                     <div class="customer__item">
@@ -204,7 +224,7 @@
             </div>
         </div>
 
-        <div class="features"> <a name="features"></a>
+        <div class="features features_anchor">
             <div class="features__body _container">
                 <div class="features__left-part">
                     <div class="features__above-title">POWERFUL SIMPLICITY</div>
@@ -229,7 +249,7 @@
         </div>
 
 
-        <div class="sunRise"> <a name="sunRise"></a>
+        <div class="sunRise">
             <div class="sunRise__body _container">
                <div class="sunRise__h1">Drones are the future of agriculture</div>
                <div class="sunRise__sub-h1">Get a bird's eye view of your fields and get a more accurate estimation of crop yield.</div>
@@ -238,7 +258,7 @@
         </div>
 
 
-        <div class="download"> <a name="download"></a>
+        <div class="download download_anchor">
             <div class="download__body _container">
                 <div class="download__left-part">
                     <div class="download__title">Download our app</div>
@@ -252,7 +272,7 @@
         </div>
 
 
-        <div class="contactUs"> <a name="contactUs"></a>
+        <div class="contactUs">
             <div class="contactUs__body _container">
                 <div class="contactUs__left-part">
                     <div class="contactUs__above-h1">CONTACT</div>
@@ -297,9 +317,9 @@
                         <a href="#" class="footer__link footer__link_last-element"><img src="./components/footer/img/yt.svg" alt="youtube"></a>
                     </div>
                     <div class="footer__navigation">
-                        <a href="#branding">Clients</a>
-                        <a href="#features">Features</a>
-                        <a href="#download">Download App</a>
+                        <a href="#" class="_smooth-link" data-goto=".branding_anchor">Clients</a>
+                        <a href="#" class="_smooth-link" data-goto=".features_anchor">Features</a>
+                        <a href="#" class="_smooth-link" data-goto=".download_anchor">Download App</a>
                     </div>
                 </div>
                 <div class="footer__addit-info">
