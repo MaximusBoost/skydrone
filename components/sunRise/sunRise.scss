@@ -6,6 +6,7 @@
 
     @media (max-width: 767px) {
         background: url(~/components/sunRise/img/fon_image.png) center no-repeat;
+        height: 128%;
     }
 
     &__body {
@@ -19,7 +20,8 @@
         @extend %text-style-h1;
 
         @media (max-width: 767px) {
-            font-size: 3.8rem;
+            font-size: 3.2rem;
+            text-align: center;
         }
     }
 

@@ -4,11 +4,19 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+
+        @media (max-width: 767px) {
+            flex-direction: column;
+        }
     }
 
     &__left-part {
         max-width: 61.6rem;
         padding: 20.8rem 8rem 0 0;
+
+        @media (max-width: 767px) {
+            padding: 0;
+        }
     }
 
     &__above-title {
@@ -19,13 +27,17 @@
         text-transform: uppercase;
         color: #DF8928;
         padding-bottom: 2.4rem;
+
+        @media (max-width: 767px) {
+            font-size: 1.6rem;
+        }
     }
 
     &__h1 {
         @extend %text-style-h1;
 
         @media (max-width: 767px) {
-            font-size: 4rem;
+            font-size: 2.8rem;
         }
     }
 
@@ -33,6 +45,10 @@
         display: flex;
         padding-top: 5.6rem;
         gap: 2.4rem;
+
+        @media (max-width: 767px) {
+            flex-direction: column;
+        }
     }
 
     &__content-item {
@@ -56,16 +72,16 @@
     }
 
     &__right-part {
-        @media (max-width: 767px) {
-            position: absolute;
-            display: none;
-        }
+       
 
     }
     
     &__img {
         padding: 6.4rem 0;
-       
+
+       @media (max-width: 767px) {
+        max-width: 100%;
+       }
     }
 }
 
