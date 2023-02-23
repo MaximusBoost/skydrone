@@ -4,9 +4,11 @@
     background: linear-gradient(0.12deg, #FFFFFF 0.1%, rgba(241, 252, 253, 0)
      105.06%, rgba(255, 255, 255, 0) 105.06%), url(~/components/mainPage/img/fon_image.png) no-repeat; 
      
-     background-size: 100% 100%;
-     background-blend-mode: color-burn, normal;
-
+    background-size: 100% 100%;
+    background-blend-mode: color-burn, normal;
+    @media (max-width:767px) {
+        background-size:cover;
+    }
 
     &__body {
         display: flex;
