@@ -2,25 +2,44 @@
 .image-slider {
     position: relative;
     overflow: hidden;
-    height: 100% !important;
+    max-height: 200% !important;
+
     &__wrapper {
-        // min-width: 0;
+
         
     }
 
     &__slide {
         display: flex;
         justify-content: space-between;
+        margin: 3rem;
+        @media (max-width:992px) {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        // @media (max-width:992px) {
+        //     max-height: 200% !important;
+        // }
     }
 
     &__image {
         margin-top: 16rem;
         max-width: 64rem;
+        @media (max-width: 767px) {
+            margin-top: 0;
+        }
+        @media (max-width: 630px) {
+            display: none;
+        }
     }
 
     &__text-part {
         padding-top: 21.5rem;
         max-width: 62rem;
+        @media (max-width:992px) {
+            padding-top: 8rem;
+        }
     }
 
     &__above-title {
@@ -31,15 +50,28 @@
         text-transform: uppercase;
         color: #DF8928;
         padding-bottom: 2.4rem;
+        @media (max-width:576px) {
+            font-size: 1.8rem;
+        }
     }
 
     &__title {
         @extend %text-style-h1;
         padding-bottom: 5.6rem;
+
+        @media (max-width:1200px) {
+            font-size: 3.2rem;
+        }
+        @media (max-width:576px) {
+            font-size: 2.4rem;
+        }
     }
 
-    &__card-comtainer{
+    &__card-container{
         display: flex;
+        @media (max-width:576px) {
+            flex-direction: column;
+        }
     }
 
     &__card {
@@ -66,6 +98,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    margin-bottom: 4rem;
     &__circle {
         width: 15px;
         height: 15px;
@@ -73,6 +106,9 @@
         &_group{
             width: 30px;
         }
+        // @media (max-width:992px) {
+        //     display: none;
+        // }
     }
 
     &__title {
@@ -81,6 +117,9 @@
         font-size: 2.4rem;
         line-height: 140%;
         color: $color-dark-grey;
+        @media (max-width:576px) {
+            font-size: 1.8rem;
+        }
     }
 
     &__subtitle {

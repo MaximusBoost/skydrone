@@ -1,21 +1,26 @@
 .navigation-menu {
     background-color: #f3f3f3;
     max-width: 100%;
-
+    @media (max-width:767px) {
+        display: none;
+    }
     &__body {
-
+        max-width: 100%;
     }
 
     &__container {
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         color: $color-dark-grey;
         :nth-child(n) {
             font-weight: $fw-bold;
             font-size: $fsx-logo-text;
             line-height: 140%;
-            margin: 2.4rem 3rem;
+            margin: 2.4rem 0;
             position: relative;
+            @media (max-width:992px) {
+                font-size: 2rem;
+            }
         }
     }
 

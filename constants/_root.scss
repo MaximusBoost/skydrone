@@ -114,3 +114,7 @@ $f-line-height-medium: 120%;
         cursor: pointer;
     }
 }
+
+body._lock{
+    overflow: hidden;
+}
