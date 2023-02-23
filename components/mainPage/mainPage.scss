@@ -2,14 +2,20 @@
     width: 100%;
     height: 100%;
     background: linear-gradient(0.12deg, #FFFFFF 0.1%, rgba(241, 252, 253, 0)
-     105.06%, rgba(255, 255, 255, 0) 105.06%), url(~/components/mainPage/img/fon_image.png) no-repeat;
+     105.06%, rgba(255, 255, 255, 0) 105.06%), url(~/components/mainPage/img/fon_image.png) no-repeat; 
+     
      background-size: 100% 100%;
      background-blend-mode: color-burn, normal;
+
 
     &__body {
         display: flex;
         align-items: center;
         height: 100%;
+        margin-right: calc(-1 * (100vw - 100%)); // для автоматического добавления места под убранный скролл
+        @media (max-width:767px) {
+            justify-content: center;
+        }
     }
 
     &__ellipse{
@@ -22,29 +28,41 @@
         border-radius: 100%;
         z-index: 1;
         box-shadow: 64.8409px 4.54508px 402px rgba(158, 158, 158, 0.16),
-         42.0265px 2.94588px 235.431px rgba(158, 158, 158, 0.121481), 
-         24.9758px 1.7507px 128.044px rgba(158, 158, 158, 0.0971852),
-          12.9682px 0.909015px 65.325px rgba(158, 158, 158, 0.08), 
-          5.28333px 0.37034px 32.7556px rgba(158, 158, 158, 0.0628148), 
-          1.20076px 0.0841681px 15.8194px rgba(158, 158, 158, 0.0385185);
+        42.0265px 2.94588px 235.431px rgba(158, 158, 158, 0.121481), 
+        24.9758px 1.7507px 128.044px rgba(158, 158, 158, 0.0971852),
+        12.9682px 0.909015px 65.325px rgba(158, 158, 158, 0.08), 
+        5.28333px 0.37034px 32.7556px rgba(158, 158, 158, 0.0628148), 
+        1.20076px 0.0841681px 15.8194px rgba(158, 158, 158, 0.0385185);
+        @media (max-width:767px) {
+            display: none;
+        }
     }
 
     &__text-part {
         display: flex;
         flex-direction: column;
-        // margin-top: -7rem;
         max-width: 51rem;
         position: relative;
         z-index: 2;
+        @media (max-width:767px) {
+            align-items: center;
+        }
     }
 
     &__title {
         @extend %text-style-h1;
+        @media (max-width:767px) {
+            text-align: center;
+        }
+        
     }
 
     &__subtitle {
         padding: 2.4rem 0;
         @extend %text-sub-h1;
+        @media (max-width:767px) {
+            text-align: center;
+        }
     }
 
     &__button {
